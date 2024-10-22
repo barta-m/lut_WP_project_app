@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/frappe-charts@latest"></script>
+</head>
+
+<body>
+    <h1>What's the weather?</h1>
+    <p id="description-text">Find out today's weather and forecast for the next 24 hours and 7 days</p>
+
+    <form id="weather-form">
+        <div id="search-part">
+            <input type="text" id="location-input" placeholder="Enter location">
+            <button type="submit" id="submit-button">Search</button>
+        </div>
+        <div id="location-div"><button type="button" id="get-location">Get My Location</button></div>
+        <div id="unit-selection">
+            <label for="celsius">
+                <input type="radio" name="unit" value="celsius" checked> Celsius
+            </label>
+            <label for="fahr">
+                <input type="radio" name="unit" value="fahr"> Fahrenheit
+            </label>
+            <label for="kelvin">
+                <input type="radio" name="unit" value="kelvin"> Kelvin
+            </label>
+        </div>
+    </form>
+
+    <div class="container" id="hidden">
+        
+        <div id="current-weather"></div>
+
+        <div id="hourly-forecast">
+            <h2>24h Forecast</h2>
+            <div class="hourly-grid"></div>
+        </div>
+
+        <div id="daily-forecast">
+            <h2>7-Day Forecast</h2>
+            <div class="daily-grid"></div>
+        </div>
+
+        <div id="chart"><br></div>
+
+        <div id="navigation-div">
+            <p id="navigation"><span id="providers-box"><span id="providers-text">Weather providers: </span><br>
+            Current: <strong>WeatherAPI</strong><br>
+            Forecast: <strong>WeatherAPI</strong><br>
+            Switch to: <a href="/index.html"><strong>OpenMeteo</strong></a></span></p>
+        </div>
+    </div>
+
+    <script src="secondapi.js"></script>
+</body>
+</html>
