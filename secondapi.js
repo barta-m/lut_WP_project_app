@@ -135,7 +135,7 @@ function displayWeather(data, unit) {
         <div class="inside-containers">
         <h2>Current Weather in ${city}</h2>
         <img src="${iconUrl}" alt="${description}">
-        <p id="current-p"><strong>${description.charAt(0).toUpperCase() + description.slice(1)}</strong></p>
+        <p id="weather-p"><strong>${description.charAt(0).toUpperCase() + description.slice(1)}</strong></p>
         <p id="current-p"><strong>Current time:</strong> ${currentHours}:${formattedMinutes}</p>
         <p id="current-p"><strong>Temperature:</strong> ${temp.toFixed(1)}°${unitSymbol}</p>
         <p id="current-p"><strong>Feels Like:</strong> ${feelsLike.toFixed(1)}°${unitSymbol}</p>
