@@ -230,7 +230,6 @@ function displayHourlyForecast(data, unit) {
     hourlyGrid.innerHTML = '';
     let index = new Date(Date.now()).toLocaleTimeString([], { hour: '2-digit', hour12: false });
     index = Number(index) + 1;
-    console.log(data);
 
     for (let i = 0; i < 24; i++) {
         let time = new Date(Date.now() + (i * 3600000)).toLocaleTimeString([], { hour: '2-digit', hour12: false });
@@ -239,7 +238,6 @@ function displayHourlyForecast(data, unit) {
         if (time2 > 24) {
             time2 = time2 - 24;
         }
-        console.log(time2);
         let temp = data.hourly.temperature_2m[index];
         index++;
         let unitSymbol = '';
@@ -309,6 +307,7 @@ function getWeatherIcon(weatherCode) {
         56: '13d',
         57: '13d',
         61: '10d',
+        63: '10d',
         65: '10d',
         66: '13d',
         67: '13d',
