@@ -131,6 +131,8 @@ button {
     border-radius: 15px;
     margin: 10px 0 20px;
     overflow: hidden;
+    text-align: center;
+
 }
 
 .hourly-grid {
@@ -140,7 +142,6 @@ button {
     gap: 10px;
     padding: 0;
     margin-bottom: 20px;
-
 }
 
 .hour-grid-item {

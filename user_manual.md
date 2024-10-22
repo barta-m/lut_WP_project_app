@@ -1,5 +1,7 @@
 # User Manual
 
+### How to use
+
 - Search bar for inputing the location
 - Search button for confirming the input
 - Radio buttons for changing the unit type
