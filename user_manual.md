@@ -14,3 +14,4 @@
     - localhost data fetch blocked by CORS policy (No 'Access-Control-Allow-Origin' header present)
     - this would be eliminated in "production" and is happening randomly (at least for me, happened twice and lasted for few hours) 
     - I suppose it may be due to the API availability or some other API server settings
+- Safari apparently supports Geolocation only with HTTPS, which wouldn't be an issue in "production" as well
